@@ -21,6 +21,8 @@ export const TodoForm = ({addTodo}) => {
       <button type="submit" className="todo-btn">
         Add Tasks
       </button>
+      <hr />
     </form>
+    
   );
 };
