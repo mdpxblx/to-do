@@ -19,19 +19,20 @@ body {
 .App {
   text-align: center;
 }
+
 h1 {
   color: #fff;
   margin-bottom: 0.5rem;
-  font-size: calc(.1rem + 1.5rem );
+  font-size: calc(.01rem + 1.5rem );
 }
 
 .TodoWrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
   background: #094d92;
-  border: 1px solid red;
-  
+  border-radius: 10px;
+  padding: 2rem;
 }
 
 .TodoForm {
@@ -43,12 +44,12 @@ h1 {
   outline: none;
   background: none;
   border: 1px solid #6fae70;
-  padding: 0.5rem 1rem;
+  padding: .3rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  width: 300px;
+  width:62.5%;
   color: #fff;
-  border-radius: 10px;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .todo-input::placeholder {
@@ -59,13 +60,12 @@ h1 {
   background: #6fae70;
   color: #fff;
   border: none;
-  padding: 0.55rem;
+  padding: 0.39rem;
   cursor: pointer;
-  border-radius: .5rem;
+  border-radius: 0px 10px 10px 0px;
   margin-bottom: 1rem;
   word-wrap: break-word;
 }
-
 
 hr{
   width: 75%;
@@ -87,7 +87,6 @@ hr{
 
 }
 
-
 .incompleted {
   color: white;
   cursor: pointer;
@@ -107,13 +106,37 @@ hr{
  
 
 @media (min-width:475px) {
-  
+  .todo-btn {
+    padding: 0.55rem;
+    cursor: pointer;
+    border-radius: 0rem .5rem .5rem 0rem;
+    margin-bottom: 1rem;
+    word-wrap: break-word;
+  }
+  .todo-input {
+    border-radius: 10px 0px 0px 10px;
+  }
+  h1 {
+    font-size: calc(.4rem + 1.5rem );
+  }
 }
 @media (min-width:640px) {
   
 }
 @media (min-width:768px) {
-  
+  .todo-input {
+  height: 2.2rem;
+  }
+  .TodoWrapper {
+     width: 60rem;
+  }
+  h1 {
+    font-size: calc(2rem + 1.5rem );
+  }
+
+  .Todo {
+   width: 75%;
+  }
 }
 @media (min-width:1280px) {
   
